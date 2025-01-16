@@ -63,7 +63,6 @@ export const CartPage = ({ products, coupons }: Props) => {
 
     let totalDiscount = totalBeforeDiscount - totalAfterDiscount;
 
-    // 쿠폰 적용
     if (selectedCoupon) {
       if (selectedCoupon.discountType === 'amount') {
         totalAfterDiscount = Math.max(0, totalAfterDiscount - selectedCoupon.discountValue);
